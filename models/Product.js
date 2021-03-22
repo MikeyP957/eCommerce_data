@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-// Create a new Sequelize model for books
+
 class Product extends Model {}
 
 Product.init(
@@ -43,9 +43,7 @@ Product.init(
     
  },
   {
-    // Link to database connection
     sequelize,
-    // Set to false to remove `created_at` and `updated_at` fields
     timestamps: false,
     underscored: true,
     modelName: 'Product'
