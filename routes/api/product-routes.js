@@ -19,7 +19,7 @@ try{
   );
   res.status(200).json(productData);
 } catch(err) {
-  res.statys(500).json(err)
+  res.status(500).json(err)
 }
 
 });
