@@ -23,6 +23,7 @@ Product.belongsToMany(Tag, {
             model: ProductTag,
             unique: false,
         },
+        onDelete: 'CASCADE',
         //as : ''
     }
 );
@@ -31,7 +32,8 @@ Tag.belongsToMany(Product, {
         through: {
             model: ProductTag,
             unique: false,
-        }
+        },
+        onDelete: 'CASCADE',
      //alias
         //as: ''
     }
